@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    padding: 30px 0px;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.titleTwo {
+    display: none;
+}
+
+body {
+    height: 100%;
+    flex-basis: 100%;
+    display: flex;
+}
+
+.maincontainer {
+    flex-basis: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-basis: 46%;
+    height: auto;
+    background: #C4C4C4;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin: 0px 2%;
+    padding: 1%;
+
+}
+
+.red {
+    flex-basis: 40%;
+    height: 250px;
+    background: #F54242;
+    margin: 2%;
+}
+
+.blue {
+    flex-basis: 90%;
+    height: 185px;
+    background: #2D3CC2;
+    order: 0;
+    margin: 2%;
+}
+
+.green {
+    flex-basis: 40%;
+    height: 265px;
+    background: #30DE76;
+    margin: 2%;
+}
+
+.greenOne {
+    order: 1;
+}
+
+.greentwo {
+    order: 2;
+}
+
+.yellow {
+    flex-basis: 90%;
+    height: 290px;
+    background: #DEB830;
+    order: 3;
+    margin: 2%;
+}
+
+.dont_show_pc {
+    display: none;
+}
+
+@media (min-width: 321px) and (max-width: 834px) {
+
+    .titleTwo,
+    .dont_show_pc {
+        display: block;
+    }
+
+    .container {
+        flex-basis: 100%;
+    }
+
+    .red {
+        flex-basis: 29%;
+        height: 175px;
+    }
+
+    .blue {
+        order: 3;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .container {
+        flex-basis: 100%;
+    }
+
+    .dont_show_mobile,
+    .dont_show_pc {
+        display: none;
+    }
+
+    .titleTwo {
+        display: block;
+    }
+
+    .red {
+        flex-basis: 90%;
+    }
+
+    .green {
+        flex-basis: 90%;
+    }
+
+    .blue {
+        order: 2;
+        height: 290px;
+    }
+
+    .containerOne {
+        order: 1;
+    }
+
+    .titleOne {
+        order: 1;
+    }
+
+    .titleTwo {
+        order: 0;
+    }
+
+    .containerTwo {
+        order: 0;
+    }
+}
